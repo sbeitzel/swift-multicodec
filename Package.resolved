@@ -1,16 +1,15 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "swift-varint",
-        "repositoryURL": "https://github.com/swift-libp2p/swift-varint.git",
-        "state": {
-          "branch": null,
-          "revision": "3d1e3c9ca4824d5acaf40ff46e96c0b956599271",
-          "version": "0.0.1"
-        }
+  "originHash" : "757cf9f241409e3cd5f092139d1c3221a5eff419ea2b7d4cb3cff9a2c773145c",
+  "pins" : [
+    {
+      "identity" : "swift-varint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sbeitzel/swift-varint.git",
+      "state" : {
+        "branch" : "feature/update_for_swift_6_2",
+        "revision" : "b68fb4214c720fba397237ba22613810f0034cf8"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 3
 }

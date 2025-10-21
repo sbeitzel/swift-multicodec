@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:6.2
 //===----------------------------------------------------------------------===//
 //
 // This source file is part of the swift-libp2p open source project
@@ -18,8 +18,11 @@ import PackageDescription
 let package = Package(
     name: "swift-multicodec",
     platforms: [
-        .macOS(.v10_10),
-        .iOS(.v10),
+        .macOS(.v10_15),
+        .iOS(.v18),
+        .watchOS(.v26),
+        .tvOS(.v26),
+        .visionOS(.v26)
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -34,7 +37,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/swift-libp2p/swift-varint.git", from: "0.0.1")
+        .package(url: "https://github.com/sbeitzel/swift-varint.git", branch: "feature/update_for_swift_6_2")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
