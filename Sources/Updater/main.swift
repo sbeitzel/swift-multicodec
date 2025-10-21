@@ -94,7 +94,7 @@ let COMPUTED_PROPERTY_CASE = """
 
 let ENUM_ADDITIONAL_COMPONENTS = """
 
-        /// Allows instantiation of a Codec based on it's name
+        /// Allows instantiation of a Codec based on its name
         /// ```
         ///  let p2p = try? Codecs("p2p")
         ///  print(p2p.code)        //"0x01a5"
@@ -442,7 +442,7 @@ guard
         scope: .PUBLIC,
         title: "Codecs",
         rawType: UInt64.self,
-        protocolConformances: ["CaseIterable", "Equatable"],
+        protocolConformances: ["CaseIterable", "Equatable", "Sendable"],
         cases: enumCases,
         computedProps: [compPropTag, compPropDes]
     )
